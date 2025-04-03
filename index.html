@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Natalie</a>
+        <nav class="navbar">
+            <a href="#home-content" class="active">Home</a>
+            <a href="#about-section" id="about">About</a>
+            <a href="#projects-section">Projects</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div id="home-content" class="home-content">
+            <h1>Hi, I'm Natalie Burgei</h1>
+            <h3>Fullstack Developer</h3>
+            <p>A dedicated Software Engineer passionate about turning complex challenges into smart, efficient
+                solutions.</p>
+            <div class="btn-box">
+                <a href="#">HIRE ME</a>
+                <a href="NataliaCV.docx" download="NataliaCV">Download CV</a>
+               
+            </div>
+        </div>
+        <img src="Natty.jpeg" alt="Natalie Burgei" class="profile-img">
+      
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section">
+        <h2>About Me</h2>
+        <p>Currently a Computer Science student at Strathmore University, Kenya, I am passionate about software
+            engineering and eager to create impactful solutions. My journey in programming has allowed me to explore
+            various technologies and build both frontend and backend solutions. I’m always looking to learn, grow, and
+            apply my skills in real-world projects.</p>
+
+            <P>Proficient in the following</P>
+            <ol>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Flask</li>
+                <li>SQL</li>
+            </ol>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects-section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>eCommerce Web</h3>
+            <p>This project involved developing an eCommerce website with features like product listings, a shopping
+                cart, secure checkout, and order management. I used HTML, CSS, JavaScript, and a backend API to manage
+                the product database and orders.</p>
+        </div>
+        <div class="project">
+            <h3>Event Management Web</h3>
+            <p>For this project, I developed an Event Management system that allows users to create, manage, and
+                register for events. It includes user authentication, event scheduling, and email notifications.
+                Technologies used include Flask and react.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+<div class="home-sci">
+    <a href="#"><i class='bx bxl-instagram'></i></a>
+    <a href="#"><i class='bx bxl-linkedin'></i></a>
+    <a href="#"><i class='bx bxl-twitter'></i></a>
+</div>
+</html>

@@ -1,0 +1,334 @@
+/* Global Styles */
+body {
+    background: #081b29;
+    color: #ededed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    overflow: visible;
+}
+
+.logo {
+    font-size: 25px;
+    color: beige;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 550;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(12, 80, 229);
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    width: 354px;
+    height: 50px;
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    color: #00abf0;
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-sci a:hover {
+    color: #fff;
+}
+
+.profile-img {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* About Section */
+#about-section {
+    min-height: 100vh;
+    /* Full height for the About section */
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #081b29, #00abf0);
+    color: #ededed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#about-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#about-section p {
+    font-size: 18px;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+#projects-section {
+    min-height: 100vh;
+    /* Full height for the Projects section */
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #081b29, #00abf0);
+    color: #ededed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#projects-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.project-item {
+    background-color: #081b29;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #00abf0;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #ededed;
+}
+
+/* Contact Section */
+#contact-section {
+    padding: 50px 10%;
+    background-color: #1f2a38;
+    color: #ededed;
+    text-align: center;
+}
+
+/* Form Styling */
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #081b29;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    margin-bottom: 30px;
+}
+
+#contact-section .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#contact-section label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ededed;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contact-section input,
+#contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #081b29;
+    color: #ededed;
+    border: 2px solid #00abf0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#contact-section button {
+    background-color: #00abf0;
+    color: #081b29;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-section button:hover {
+    background-color: #00a1d4;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #contact-section {
+        padding: 30px 5%;
+    }
+
+    #contact-section h2 {
+        font-size: 28px;
+    }
+
+    #contact-form {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+}
