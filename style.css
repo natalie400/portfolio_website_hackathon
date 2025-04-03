@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     background: #081b29;
     color: #ededed;
@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-/* Header */
+
 .header {
     position: fixed;
     top: 0;
@@ -201,10 +201,9 @@ a {
     margin: 0 auto;
 }
 
-/* Projects Section */
 #projects-section {
     min-height: 100vh;
-    /* Full height for the Projects section */
+    
     padding: 80px 10%;
     background: linear-gradient(135deg, #081b29, #00abf0);
     color: #ededed;
@@ -246,7 +245,7 @@ a {
     color: #ededed;
 }
 
-/* Contact Section */
+
 #contact-section {
     padding: 50px 10%;
     background-color: #1f2a38;
@@ -254,7 +253,7 @@ a {
     text-align: center;
 }
 
-/* Form Styling */
+
 #contact-form {
     max-width: 500px;
     margin: 0 auto;
